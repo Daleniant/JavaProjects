@@ -3,6 +3,9 @@ import java.util.Comparator;
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdIn;
 
+// Main object that solves a problem through an optimized algorithm. Input points to this object
+// Project mark - 89
+
 public class FastCollinearPoints {
     private LineSegment[] fullSegments = new LineSegment[0];
     
