@@ -1,11 +1,14 @@
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 
+// Main object made for finding a percolation value through simulation of multiple cells
+
 public class PercolationStats {
     // perform independent trials on an n-by-n grid
     private double[] testResults;
     private int trials;
-
+    
+    // input a size of a cell and number of trials to make on it
     public PercolationStats(int n, int trialsPar) {
         if (n < 1 || trialsPar < 1)
             throw new IllegalArgumentException();
@@ -13,6 +16,7 @@ public class PercolationStats {
         trials = trialsPar;
         testResults = new double[trials];
         for (int i = 0; i < trials; i++) {
+            //individual trials. While the system doesn't percolate - open a random point in a cell
             Percolation trial = new Percolation(n);
 
             while (!trial.percolates()) {
@@ -23,7 +27,7 @@ public class PercolationStats {
             testResults[i] = (double)trial.numberOfOpenSites() / (n*n);
         }
     }
-
+    // functions used for required statistic analysis
     public double mean() {
         return StdStats.mean(testResults);
     }
