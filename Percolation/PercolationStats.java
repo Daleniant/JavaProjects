@@ -2,6 +2,7 @@ import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StdStats;
 
 // Main object made for finding a percolation value through simulation of multiple cells
+// Project mark - 100
 
 public class PercolationStats {
     // perform independent trials on an n-by-n grid
