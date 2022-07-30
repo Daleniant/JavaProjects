@@ -2,6 +2,9 @@ import java.util.Comparator;
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdIn;
 
+// Secondary object made to represent a Point
+// Project mark - 89
+
 public class Point implements Comparable<Point> {
 
     private final int x; // x-coordinate of this point
