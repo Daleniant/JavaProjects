@@ -1,3 +1,6 @@
+// Secondary object made to represent a Line Segment
+// Project mark - 89
+
 public class LineSegment {
     private final Point p;   // one end point of this line segment
     private final Point q;   // the other end point of this line segment
