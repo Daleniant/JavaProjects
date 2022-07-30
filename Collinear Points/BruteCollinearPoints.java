@@ -2,6 +2,9 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdDraw;
 
+// Main object that solves a problem through brute force. Input points to this object
+// Project mark - 89
+
 public class BruteCollinearPoints {
     private LineSegment[] fullSegments = new LineSegment[0];
     
