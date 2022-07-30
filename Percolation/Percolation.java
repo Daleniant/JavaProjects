@@ -1,5 +1,8 @@
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
+// A secondary object made for simulation of one percolation cell
+// Project mark - 100
+
 public class Percolation {
     private byte[] cell; // 3 bits - abc. a = isOpen, b = is connected to top, c = is connected to bot
     private WeightedQuickUnionUF sites;
