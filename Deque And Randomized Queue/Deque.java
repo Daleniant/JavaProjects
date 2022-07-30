@@ -1,5 +1,6 @@
 import java.util.Iterator;
-//import edu.princeton.cs.algs4.StdOut;
+
+//Project mark - 99
 
 public class Deque<Item> implements Iterable<Item> {
     private Node first, last;
